@@ -107,6 +107,14 @@ print(f'A concatenação dos dois textos é: {resultado}')
 # #### Booleanos (`bool`)
 
 # 16. Escreva um programa que avalie duas expressões booleanas inseridas pelo usuário e retorne o resultado da operação AND entre elas.
+# %%
+homem = input('Você é homem? (True/False): ').strip().capitalize()
+mulher = input('Você é mulher? (True/False): ').strip().capitalize()
+homem_bool = homem == 'True'
+mulher_bool = mulher == 'True'
+validacao = homem_bool and mulher_bool
+print(f'Validação: {validacao}')
+
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
