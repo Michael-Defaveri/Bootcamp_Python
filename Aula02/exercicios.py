@@ -52,9 +52,14 @@ print(f'O valor da média de {n1} e {n2} é de: {resultado}')
 
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 #%%
-
+base = float(input('Digite um número: '))
+expoente = float(input('Digite outro número: '))
+resultado = base ** expoente
+print(f'O valor da potência de {base} por {expoente} é de: {resultado}')
 
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+# %%
+
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 
 # #### Strings (`str`)
@@ -80,3 +85,4 @@ print(f'O valor da média de {n1} e {n2} é de: {resultado}')
 # 23: Calculadora Simples
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
+# %%
