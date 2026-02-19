@@ -132,6 +132,12 @@ valor_invertido = not valor1_bool
 print(f'O valor invertido é: {valor_invertido}')
 
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+# %%
+n1 = float(input('Digite um número: '))
+n2 = float(input('Digite outro número: '))
+validacao = n1 == n2
+print(f'Os números são iguais?: {validacao}')
+
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 
 # #### try-except e if
