@@ -78,6 +78,11 @@ maius = string_user.upper()
 print(f'{string_user} convertido para maiúsculo é {maius}')
 
 # 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
+# %%
+name = str(input('Digite o seu nome: '))
+name_lower = name.lower()
+print(f'O seu nome em minúsculo é: {name_lower}')
+
 # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
@@ -97,5 +102,3 @@ print(f'{string_user} convertido para maiúsculo é {maius}')
 # 23: Calculadora Simples
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
-
-# %%
