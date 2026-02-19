@@ -64,6 +64,10 @@ fahrenheit = (celsius * 9/5) + 32
 print(f'A temperatura de {celsius}°C é de {fahrenheit}°F')
 
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
+# %%
+raio = float(input('Digite o raio do círculo: '))
+area = 3.14 * raio ** 2
+print(f'A área do círculo é de: {area}')
 
 # #### Strings (`str`)
 
@@ -88,4 +92,5 @@ print(f'A temperatura de {celsius}°C é de {fahrenheit}°F')
 # 23: Calculadora Simples
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
+
 # %%
