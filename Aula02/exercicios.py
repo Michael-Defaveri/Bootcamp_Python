@@ -90,6 +90,13 @@ frase_sem_esppacos = frase.replace(" ", "")
 print(f'Sua frase sem espaços ficaria dessa forma: {frase_sem_esppacos}')
 
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
+# %%
+data = str(input('Digite o uma data no formato dd/mm/aaaa: '))
+data_formatada = data.split('/')
+print(f'O dia é {data_formatada[0]}')
+print(f'O mês é {data_formatada[1]}')
+print(f'O ano é {data_formatada[2]}')
+
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
 
 # #### Booleanos (`bool`)
