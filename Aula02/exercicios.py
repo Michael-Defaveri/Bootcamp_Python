@@ -116,6 +116,14 @@ validacao = homem_bool and mulher_bool
 print(f'Validação: {validacao}')
 
 # 17. Crie um programa que receba dois valores booleanos do usuário e retorne o resultado da operação OR.
+# %%
+valor1 = input('Você é maior de 18 anos?: ').strip().capitalize()
+valor2 = input('Você é homem?: ').strip().capitalize()
+valor1_bool = valor1 == 'Sim'
+valor2_bool = valor2 == 'Sim'
+resultado = valor1_bool or valor2_bool
+print(f'É maior de 18 anos ou é homem?: {resultado}')
+
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
