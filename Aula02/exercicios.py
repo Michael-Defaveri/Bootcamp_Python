@@ -98,6 +98,11 @@ print(f'O mês é {data_formatada[1]}')
 print(f'O ano é {data_formatada[2]}')
 
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
+# %%
+texto1 = str(input('Digite um texto: '))
+texto2 = str(input('Digite outro texto: '))
+resultado = texto1 + ' ' + texto2
+print(f'A concatenação dos dois textos é: {resultado}')
 
 # #### Booleanos (`bool`)
 
