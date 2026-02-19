@@ -125,6 +125,12 @@ resultado = valor1_bool or valor2_bool
 print(f'É maior de 18 anos ou é homem?: {resultado}')
 
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
+# %%
+valor1 = input('Digite um valor booleano (True/False): ').strip().lower()
+valor1_bool = valor1 == 'true'
+valor_invertido = not valor1_bool
+print(f'O valor invertido é: {valor_invertido}')
+
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 
