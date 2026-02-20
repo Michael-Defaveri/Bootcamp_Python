@@ -210,7 +210,28 @@ except ValueError:
 
 # 24: Classificador de Números
 # %%
+valor_usuario_raw = input('Digite um número: ')
 
+try:
+    valor_usuario = float(valor_usuario_raw)
 
+    print(f'Variável {valor_usuario} é um número')
+
+    if valor_usuario > 0:
+        print(f'O valor é positivo')
+    elif valor_usuario < 0:
+        print(f'O valor é negativo')
+    else:
+        print(f'O valor é zero')
+
+    if valor_usuario % 2 == 0:
+        print(f'O valor é par')
+    else:
+        print(f'O valor é ímpar')
+
+except ValueError:
+    print(f'Erro: "{valor_usuario_raw}" não é um número válido. Digite um número inteiro ou decimal.')
+        
+        
 # 25: Conversão de Tipo com Validação
 # %%
