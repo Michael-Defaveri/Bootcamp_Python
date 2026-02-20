@@ -162,6 +162,7 @@ except ValueError:
 # %%
 try:
     palavra = str(input('Digite uma palavra: '))
+    palavra = palavra.replace(" ", "").lower()
     palavra_invertida = palavra[::-1]
     if isinstance(palavra, str):
         print(f'A variável {palavra} é uma string')
@@ -176,9 +177,41 @@ except ValueError:
 
 # 23: Calculadora Simples
 # %%
+try:
+    n1 = float(input('Digite um número: '))
+    operacao = input('Digite a operação (+, -, *, /, **, %): ')
+    n2 = float(input('Digite outro número: '))
+
+    resultado = None
+
+    if operacao == '+':
+        resultado = n1 + n2
+    elif operacao == '-':
+        resultado = n1 - n2
+    elif operacao == '*':
+        resultado = n1 * n2
+    elif operacao == '/':
+        if n2 == 0:
+            print('Erro: Divisão por zero.')
+        else:
+            resultado = n1 / n2
+    elif operacao == '**':
+        resultado = n1 ** n2
+    elif operacao == '%':
+        resultado = n1 % n2
+    else:
+        print('Operação inválida.')
+
+    if resultado is not None:
+        print(f'O resultado da operação é: {resultado}')
+
+except ValueError:
+    print('Erro: Digite números válidos (10, -12.5, 0 etc.)')
 
 # 24: Classificador de Números
 # %%
+
+
 
 # 25: Conversão de Tipo com Validação
 # %%
