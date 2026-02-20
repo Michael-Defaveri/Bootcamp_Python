@@ -160,6 +160,19 @@ except ValueError:
 
 # 22: Verificador de Palíndromo
 # %%
+try:
+    palavra = str(input('Digite uma palavra: '))
+    palavra_invertida = palavra[::-1]
+    if isinstance(palavra, str):
+        print(f'A variável {palavra} é uma string')
+    else:
+        print(f'A variável {palavra} não é uma string')
+    if palavra == palavra_invertida:
+        print(f'A palavra é um palíndromo')
+    else:
+        print(f'A palavra não é um palíndromo')
+except ValueError:
+    print('Erro: Digite uma string válida')
 
 # 23: Calculadora Simples
 # %%
