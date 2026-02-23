@@ -2,10 +2,13 @@
 
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
 # %%
-n1 = int(input("Digite um número inteiro: "))
-n2 = int(input("Digite outro número inteiro: "))
-resultado = n1 + n2
-print(f'O valor da soma de {n1} + {n2} é de:  {resultado}')
+try:
+    n1 = int(input("Digite um número inteiro: "))
+    n2 = int(input("Digite outro número inteiro: "))
+    resultado = n1 + n2
+    print(f'O valor da soma de {n1} + {n2} é de:  {resultado}')
+except ValueError:
+    print("Erro: Não é permitido usar nada além de números inteiros.")
 
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
 # %%
