@@ -59,4 +59,26 @@ except ValueError:
     print('❌ Erro: Entrada inválida. Digite apenas números sem espaços ou letras.')
 
 
+# 2. Classificação de Dados de Sensor
+# Imagine que você está trabalhando com dados de sensores IoT. Os dados incluem medições de temperatura. 
+# Você precisa classificar cada leitura como 'Baixa', 'Normal' ou 'Alta'. Considerando que:
+# Temperatura < 18°C é 'Baixa'
+# Temperatura >= 18°C e <= 26°C é 'Normal'
+# Temperatura > 26°C é 'Alta'
+
+# %%
+baixa = 15
+normal = 22
+alta = 29
+
+temperatura = float(input('Digite um temperatura: '))
+
+if temperatura < baixa:
+    print('Temperatura baixa')
+
+elif temperatura <= normal:
+    print('Temperatura normal')
+
+else:
+    print('Temperatura alta')
 # %%
