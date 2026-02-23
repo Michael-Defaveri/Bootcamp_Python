@@ -37,4 +37,26 @@ except ValueError:
     print('Erro: Use apenas números. Espaços ou letras não são permitidos.')
 
 
+# Exercicio 1 Versao 2
+# %% 
+try:
+    print('--- Verificação de Qualidade de Dados ---')
+    
+    quantidade = int(input('Digite uma quantidade: '))
+    # Enquanto o número for menor ou igual a zero, ele pede de novo
+    while quantidade <= 0:
+        print('A quantidade deve ser positiva!')
+        quantidade = int(input('Digite uma quantidade válida: '))
+
+    preco = float(input('Digite um preço: '))
+    while preco <= 0:
+        print('O preço deve ser positivo!')
+        preco = float(input('Digite um preço válido: '))
+
+    print(f'✅ Sucesso! Qtd: {quantidade} | Preço: R${preco:.2f}')
+
+except ValueError:
+    print('❌ Erro: Entrada inválida. Digite apenas números sem espaços ou letras.')
+
+
 # %%
