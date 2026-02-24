@@ -201,25 +201,59 @@
 # print(pares)
 
 
-# 10. Agregação de Dados por Categoria
-# Objetivo: Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
+# # 10. Agregação de Dados por Categoria
+# # Objetivo: Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
+
+# # %%
+# vendas = [
+#     {"categoria": "eletrônicos", "valor": 1200},
+#     {"categoria": "livros", "valor": 200},
+#     {"categoria": "eletrônicos", "valor": 800}
+# ]
+
+# total_por_categoria = {}
+
+# for i in vendas:
+#     categoria = i['categoria']
+#     valor = i['valor']
+#     if categoria in total_por_categoria:
+#         total_por_categoria[categoria] += valor
+#     else:
+#         total_por_categoria[categoria] = valor
+
+# print(total_por_categoria)
+
+
+#11. Leitura de Dados até Flag
+#Objetivo: Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
 
 # %%
-vendas = [
-    {"categoria": "eletrônicos", "valor": 1200},
-    {"categoria": "livros", "valor": 200},
-    {"categoria": "eletrônicos", "valor": 800}
-]
 
-total_por_categoria = {}
 
-for i in vendas:
-    categoria = i['categoria']
-    valor = i['valor']
-    if categoria in total_por_categoria:
-        total_por_categoria[categoria] += valor
-    else:
-        total_por_categoria[categoria] = valor
 
-print(total_por_categoria)
-    
+#12. Validação de Entrada
+#Objetivo: Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
+
+# %%
+
+
+
+#13. Consumo de API Simulado
+#Objetivo: Simular o consumo de uma API paginada, onde cada "página" de dados é processada em loop até que não haja mais páginas.
+
+# %%
+
+
+
+
+#14. Tentativas de Conexão
+#Objetivo: Simular tentativas de reconexão a um serviço com um limite máximo de tentativas.
+
+# %%
+
+
+
+#15. Processamento de Dados com Condição de Parada
+#Objetivo: Processar itens de uma lista até encontrar um valor específico que indica a parada.
+
+# %%
