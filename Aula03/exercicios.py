@@ -151,3 +151,17 @@ for i in palavras:
 
 print(contagem_palavras)
 
+
+#  7. Normalizar uma lista de números para que fiquem na escala de 0 a 1.
+
+# %%
+numeros = [100, 200, 300, 400, 500]
+maximo = max(numeros)
+minimo = min(numeros)
+
+normalizados = []
+
+for i in numeros:
+    resultado = (i - minimo) / (maximo - minimo)
+    normalizados.append(resultado) # O método append adiciona um elemento ao final da lista e não funciona para dicionários
+
