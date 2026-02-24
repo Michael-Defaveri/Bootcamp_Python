@@ -167,22 +167,34 @@
 
 # print(normalizados)
 
-# 8. Filtragem de Dados Faltantes
-# Objetivo: Dada uma lista de dicionários representando dados de usuários, filtrar aqueles que têm um campo específico faltando.
+# # 8. Filtragem de Dados Faltantes
+# # Objetivo: Dada uma lista de dicionários representando dados de usuários, filtrar aqueles que têm um campo específico faltando.
 
-usuarios = [
-    {"nome": "Alice", "email": "alice@example.com"},
-    {"nome": "Bob", "email": ""},
-    {"nome": "Carol", "email": "carol@example.com"}
-]
+# usuarios = [
+#     {"nome": "Alice", "email": "alice@example.com"},
+#     {"nome": "Bob", "email": ""},
+#     {"nome": "Carol", "email": "carol@example.com"}
+# ]
 
-usuarios_validos = []
+# usuarios_validos = []
 
-for u in usuarios:
-    if u['email']:
-        usuarios_validos.append(u)
-    else:
-        print(f'Usuário {u['nome']} inválido')
+# for u in usuarios:
+#     if u['email']:
+#         usuarios_validos.append(u)
+#     else:
+#         print(f'Usuário {u['nome']} inválido')
 
-print(usuarios_validos)
+# print(usuarios_validos)
 
+# 9. Extração de Subconjuntos de Dados
+# Objetivo: Dada uma lista de números, extrair apenas aqueles que são pares.
+
+# %%
+numeros = range(10, 31)
+pares = [p for p in numeros if p % 2 == 0]
+print(pares)
+
+# for p in numeros:
+#     if p % 2 == 0:
+#         pares.append(p)
+# print(pares)
