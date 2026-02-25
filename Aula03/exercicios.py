@@ -272,18 +272,28 @@
 # print("Todas as páginas foram processadas.")
 
 
-#14. Tentativas de Conexão
-#Objetivo: Simular tentativas de reconexão a um serviço com um limite máximo de tentativas.
+# #14. Tentativas de Conexão
+# #Objetivo: Simular tentativas de reconexão a um serviço com um limite máximo de tentativas.
 
-# %%
-tentativas = 0
-max_tentativas = 3
+# # %%
+# tentativas = 0
+# max_tentativas = 3
 
-while tentativas <= max_tentativas:
-    print(f'Tentativa {tentativas} de reconexão. Temos mais {max_tentativas - tentativas} tentativas')
-    tentativas += 1
+# while tentativas <= max_tentativas:
+#     print(f'Tentativa {tentativas} de reconexão. Temos mais {max_tentativas - tentativas} tentativas')
+#     tentativas += 1
 
 #15. Processamento de Dados com Condição de Parada
 #Objetivo: Processar itens de uma lista até encontrar um valor específico que indica a parada.
 
 # %%
+lista = [1,2,3,4,5,6,7,8,9,10]
+parada = 8
+
+for i in lista:
+    if i == parada:
+        print('Totas as tentativas possíveis foram esgotadas')
+        break
+    else:
+        print(f'Essa é a tentativa {i}')
+
