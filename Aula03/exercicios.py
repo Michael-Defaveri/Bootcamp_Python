@@ -228,26 +228,33 @@
 #Objetivo: Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
 
 # %%
-dados = []
+# dados = []
 
-while True:
-    entrada = str(input('Digite a palavra correta: '))
-    if entrada == 'sair':
-        print('Parabéns, você acertou a palavra!')
-        break
-    else: 
-        dados.append(entrada)
-        print(f'Esta palavra não é a desejada.')
-
-
-
+# while True:
+#     entrada = str(input('Digite a palavra correta: '))
+#     if entrada == 'sair':
+#         print('Parabéns, você acertou a palavra!')
+#         break
+#     else: 
+#         dados.append(entrada)
+#         print(f'Esta palavra não é a desejada.')
 
 
 #12. Validação de Entrada
 #Objetivo: Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
 
 # %%
+import time
 
+while True:
+    numero = float(input('Digite um número entre 10 e 30: '))
+    if numero >= 10 and numero <= 30:
+        print('Parabéns! Número válido.')
+        break
+    else:
+        print('Digite um número que esteja dentro do intervalo desejado')
+
+    time.sleep(5)
 
 
 #13. Consumo de API Simulado
