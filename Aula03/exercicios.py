@@ -257,29 +257,31 @@
 #     time.sleep(5)
 
 
-#13. Consumo de API Simulado
-#Objetivo: Simular o consumo de uma API paginada, onde cada "página" de dados é processada em loop até que não haja mais páginas.
+# #13. Consumo de API Simulado
+# #Objetivo: Simular o consumo de uma API paginada, onde cada "página" de dados é processada em loop até que não haja mais páginas.
 
-# %%
-pagina_atual = 1
-paginas_totais = 5  # Simulação, na prática, isso viria da API
+# # %%
+# pagina_atual = 1
+# paginas_totais = 5  # Simulação, na prática, isso viria da API
 
-while pagina_atual <= paginas_totais:
-    print(f"Processando página {pagina_atual} de {paginas_totais}")
-    # Aqui iria o código para processar os dados da página
-    pagina_atual += 1
+# while pagina_atual <= paginas_totais:
+#     print(f"Processando página {pagina_atual} de {paginas_totais}")
+#     # Aqui iria o código para processar os dados da página
+#     pagina_atual += 1
 
-print("Todas as páginas foram processadas.")
-
-
+# print("Todas as páginas foram processadas.")
 
 
 #14. Tentativas de Conexão
 #Objetivo: Simular tentativas de reconexão a um serviço com um limite máximo de tentativas.
 
 # %%
+tentativas = 0
+max_tentativas = 3
 
-
+while tentativas <= max_tentativas:
+    print(f'Tentativa {tentativas} de reconexão. Temos mais {max_tentativas - tentativas} tentativas')
+    tentativas += 1
 
 #15. Processamento de Dados com Condição de Parada
 #Objetivo: Processar itens de uma lista até encontrar um valor específico que indica a parada.
