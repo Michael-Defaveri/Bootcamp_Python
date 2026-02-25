@@ -228,6 +228,18 @@
 #Objetivo: Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
 
 # %%
+dados = []
+
+while True:
+    entrada = str(input('Digite a palavra correta: '))
+    if entrada == 'sair':
+        print('Parabéns, você acertou a palavra!')
+        break
+    else: 
+        dados.append(entrada)
+        print(f'Esta palavra não é a desejada.')
+
+
 
 
 
