@@ -240,27 +240,36 @@
 #         print(f'Esta palavra não é a desejada.')
 
 
-#12. Validação de Entrada
-#Objetivo: Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
+# #12. Validação de Entrada
+# #Objetivo: Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
 
-# %%
-import time
+# # %%
+# import time
 
-while True:
-    numero = float(input('Digite um número entre 10 e 30: '))
-    if numero >= 10 and numero <= 30:
-        print('Parabéns! Número válido.')
-        break
-    else:
-        print('Digite um número que esteja dentro do intervalo desejado')
+# while True:
+#     numero = float(input('Digite um número entre 10 e 30: '))
+#     if numero >= 10 and numero <= 30:
+#         print('Parabéns! Número válido.')
+#         break
+#     else:
+#         print('Digite um número que esteja dentro do intervalo desejado')
 
-    time.sleep(5)
+#     time.sleep(5)
 
 
 #13. Consumo de API Simulado
 #Objetivo: Simular o consumo de uma API paginada, onde cada "página" de dados é processada em loop até que não haja mais páginas.
 
 # %%
+pagina_atual = 1
+paginas_totais = 5  # Simulação, na prática, isso viria da API
+
+while pagina_atual <= paginas_totais:
+    print(f"Processando página {pagina_atual} de {paginas_totais}")
+    # Aqui iria o código para processar os dados da página
+    pagina_atual += 1
+
+print("Todas as páginas foram processadas.")
 
 
 
