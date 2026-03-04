@@ -1,41 +1,43 @@
-def validacao_nome_usuario() -> str:
-    while True:
-        nome = input("Digite seu nome: ").strip()
-        if not nome:
-            print("Erro: O nome não pode estar vazio.")
-        elif any(char.isdigit() for char in nome):
-            print("Erro: O nome não deve conter números.")
-        elif len(nome) < 2:
-            print("Erro: Nome muito curto.")
-        else:
-            return nome
+# 1.Crie uma lista com os números de 1 a 10 e use um loop para imprimir cada número elevado ao quadrado.
 
-def validacao_valor(frase_input: str) -> float:
-    """Função genérica para validar números (salário ou bônus)"""
-    while True:
-        try:
-            valor = float(input(frase_input))
-            if valor < 0:
-                print("Erro: Digite um valor positivo.")
-                continue
-            return valor
-        except ValueError:
-            print("Erro: Entrada inválida. Digite um número.")
+numeros = list(range(1, 11))
 
+for i in numeros:
+    print(i ** 2)
 
-usuario = {}
+# 2.Dada a lista ["Python", "Java", "C++", "JavaScript"], remova o item "C++" e adicione "Ruby".
 
-# Alimentando o dicionário usando as funções
-usuario["nome"] = validacao_nome_usuario()
-usuario["salario"] = validacao_valor("Digite o seu salário: ")
-usuario["bonus_percentual"] = validacao_valor("Digite o valor do bônus (em %): ")
+lista: list = ["Python", "Java", "C++", "JavaScript"]
+lista.remove("C++")
+lista.insert(2, "Ruby")
 
-# Calculando o valor final e guardando no dicionário também
-usuario["valor_bonus"] = usuario["salario"] * (usuario["bonus_percentual"] / 100)
-usuario["total"] = usuario["salario"] + usuario["valor_bonus"]
+print(lista)
 
-print("-" * 60)
-print(f"Relatório de {usuario['nome']}:")
-print(f"Salário Base: R${usuario['salario']:.2f}")
-print(f"Bônus ({usuario['bonus_percentual']}%): R${usuario['valor_bonus']:.2f}")
-print(f"Total a Receber: R${usuario['total']:.2f}")
+# 3.Crie um dicionário para armazenar informações de um livro, incluindo título, autor e ano de publicação. Imprima cada informação.
+
+livro: dict = {"titulo": "Amor", "autor": "Deus", "ano_publicacao": "Eternidade"}
+
+for i in livro.items():
+    print(i)
+
+# 4. Escreva um programa que conta o número de ocorrências de cada caractere em uma string usando um dicionário.
+
+def contar_caracteres(letra: str) -> dict:
+    contagem: dict = {}
+    for caractere in letra:
+        contagem[caractere] = contagem.get(caractere, 0) + 1
+    return contagem
+
+print(contar_caracteres("engenharia de dados"))
+
+5.Dada a lista ["maçã", "banana", "cereja"] e o dicionário {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}, calcule o preço total da lista de compras.
+
+lista: list = ["maçã", "banana", "cereja"]
+precos: dict = {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}
+
+preco_total: float = 0
+
+for i in lista:
+    preco_total += precos[i]
+
+print(preco_total)
