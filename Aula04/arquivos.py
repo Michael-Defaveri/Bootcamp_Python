@@ -11,4 +11,3 @@ with open(file=caminho_arquivo, mode='r', encoding='utf-8') as arquivo:
         arquivo_csv.append(i)
 
 print(arquivo_csv)
-
